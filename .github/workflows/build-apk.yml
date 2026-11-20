@@ -14,9 +14,10 @@ jobs:
 
       - name: Extract Android project
         run: |
-          unzip -o solal.zip -d .
-          chmod -R u+rwX,go+rX app
-          ls -la
+         unzip -o solal.zip -d .
+         chmod -R u+rwX,go+rX app
+         chmod u+rw,go+r gradle.properties build.gradle.kts settings.gradle.kts
+         ls -la
 
       - name: Set up Java
         uses: actions/setup-java@v4
