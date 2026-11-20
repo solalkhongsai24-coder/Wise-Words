@@ -31,8 +31,8 @@ jobs:
           packages: 'platform-tools'
 
 
-      - name: Set up Gradle
-        uses: gradle/actions/setup-gradle@v4
+      - name: Set up Gradle 
+        uses: gradle/actions/setup-gradle@v6
         with:
           gradle-version: '8.9'
 
